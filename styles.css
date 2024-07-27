@@ -1,0 +1,104 @@
+/* Estilos generales para todos los tamaños de pantalla */
+body {
+    background-color: #788199;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #eeeeee;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Asignación de la animación al título */
+.titulo_animado {
+    animation: bounce 2s infinite;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagen {
+    border-radius: 10px;
+    filter: blur(1px);
+}
+
+.navbar_logo {
+    width: 120px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor_traductor_encriptador {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: #eeeeee;
+    background-color: #8990a2;
+    width: 110px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    border-color: #eeeeee;
+}
+
+textarea {
+    background-color: #8990a2;
+    border-color: #eeeeee;
+    color: #eeeeee;
+    font-family: "Montserrat", sans-serif;
+    border: solid 3px;
+    border-radius: 10px;
+    width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+    min-height: 100px; /* Altura mínima  */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    margin-bottom: 10px; /* Espacio entre los textareas */
+}
+footer{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #eeeeee;
+    background-color: #8990a2;
+    padding: 3px;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+    .imagen {
+        display: none; /* Oculta la imagen en dispositivos móviles */
+    }
+.contenedor{
+display:flex ;
+flex-direction: column;
+}
+    textarea {
+        width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+        min-height: 100px; /* Altura mínima  */
+        resize: vertical; /* Permite redimensionar verticalmente */
+        margin-bottom: 10px; /* Espacio entre los textareas */
+    }
+}

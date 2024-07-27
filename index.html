@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+<header class="header">
+    <div>
+        <h1 class="titulo_animado">Encriptador de texto</h1>
+    </div>
+    <!-- agregue <a> en el header para agregar el logo de alura, este lo descargue desde figma-->
+    <!--la etiqueta <a> se utiliza como ancla para crear enlaces-->
+        <div> 
+            <a href="#" class="navbar_logo">
+            <img src="./assets/img/Designer__8_-removebg-preview.png" alt="Logo" width="90px" height="90px"> </a>
+        </div>
+</header>
+<main>
+  
+<div class="contenedor">
+    <!--Utilice <input> que nos permite interactuar con el usuario en este caso con un type texto-->
+    <!--El placeholder nos permite avisar que en el cuadro necesitamos agregar un texto-->
+    <div class="contenedor_texto">
+        <div>
+        <textarea id="inputText" rows="4" cols="50" placeholder="Escribe tu texto aquí"></textarea>
+    </div>
+    
+    <div>
+        <button onclick="encriptadorTexto()">Reemplazar</button>
+        <button onclick="descencriptarTexto()">desencriptar</button>
+    </div>
+    </div>
+    <div class="contenedor_traductor_encriptador">
+        <div>
+            <img class="imagen" src="./assets/img/Designer (18).jpeg" alt="texto encritado" width="100%" height="270px">
+        </div>
+        <div>
+            <textarea class="text_contenedor" id="resultado" rows="10" cols="50" placeholder=""></textarea>
+            <div>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+        </div>
+    </div>
+    
+</div>
+</main>
+<footer>
+    <div class="footer">
+        <p>Pagina producida por <strong> CabelloInfiesta</strong> 2024</p>
+    </div>
+</footer>
+</body>
+</html>
